@@ -403,6 +403,7 @@ RectTransform:
   - {fileID: 1718396861}
   - {fileID: 610404541}
   - {fileID: 270197632}
+  - {fileID: 739926653}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -478,6 +479,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: MainMenu
+  levelCounter: {fileID: 0}
+  thisLevelNumber: 0
+  levelButton: {fileID: 0}
 --- !u!212 &223305824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -799,7 +803,7 @@ GameObject:
   - component: {fileID: 610404543}
   - component: {fileID: 610404542}
   m_Layer: 5
-  m_Name: Level2Button
+  m_Name: Level1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -837,7 +841,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59582a566f21f734bb805284c3714664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level2
+  scene: Level1
+  levelCounter: {fileID: 739926654}
+  thisLevelNumber: 1
+  levelButton: {fileID: 610404543}
 --- !u!114 &610404543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,6 +1038,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &739926652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739926653}
+  - component: {fileID: 739926654}
+  m_Layer: 0
+  m_Name: LevelCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &739926653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739926652}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 451.14954, y: -207.20074, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 192765159}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &739926654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739926652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df422d7a546bb048bfbeca7c006b770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &843392891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,6 +1542,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Level0
+  levelCounter: {fileID: 739926654}
+  thisLevelNumber: 0
+  levelButton: {fileID: 1718396863}
 --- !u!114 &1718396863
 MonoBehaviour:
   m_ObjectHideFlags: 0

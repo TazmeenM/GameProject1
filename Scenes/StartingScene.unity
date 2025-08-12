@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1317379099}
   - component: {fileID: 1317379098}
   - component: {fileID: 1317379097}
-  - component: {fileID: 1317379096}
+  - component: {fileID: 1317379100}
   m_Layer: 5
   m_Name: NextTextBoxButton
   m_TagString: Untagged
@@ -739,21 +739,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540.4066, y: -313.70123}
   m_SizeDelta: {x: 259.1867, y: 48.5975}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1317379096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317379094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86052acd780109841831bb437122c970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBoxChanger: {fileID: 1992297707}
-  forTheAcquiredPanel: {fileID: 0}
-  scene: Map
 --- !u!114 &1317379097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -798,8 +783,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1317379096}
-        m_TargetAssemblyTypeName: NextTextBoxButton, Assembly-CSharp
+      - m_Target: {fileID: 1317379100}
+        m_TargetAssemblyTypeName: NextTextBoxButtonStartingScene, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -848,6 +833,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317379094}
   m_CullTransparentMesh: 1
+--- !u!114 &1317379100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317379094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4288e8fadba28ea48961dc7083d11f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBoxChanger: {fileID: 1992297707}
+  scene: Map
 --- !u!1 &1866363300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,6 +1039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992297706}
   - component: {fileID: 1992297707}
+  - component: {fileID: 1992297708}
   m_Layer: 0
   m_Name: TextBoxes
   m_TagString: Untagged
@@ -1080,6 +1080,23 @@ MonoBehaviour:
   - ...there lived a girl.
   textInBox: {fileID: 1206368374}
   forTheAcquiredPanel: {fileID: 0}
+--- !u!114 &1992297708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992297705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a4e99aca4d7740b703f2875ab6722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 1206368372}
+  textBoxText:
+  - Once upon a time...
+  - ...there lived a girl.
+  textInBox: {fileID: 1206368374}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

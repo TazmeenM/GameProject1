@@ -12,9 +12,6 @@ public class NextTextBoxButton : MonoBehaviour
 
     public void OnClick()
     {
-        if (textBoxChanger == null) Debug.LogError("textBoxChanger is null!");
-        if (forTheAcquiredPanel == null) Debug.LogError("forTheAcquiredPanel is null!");
-        if (forTheLevelPassedPanel == null) Debug.LogError("forTheLevelPassedPanel is null!");
         Debug.Log("Next Button Clicked");
         if (!textBoxChanger.isLastTextBox())
         {
