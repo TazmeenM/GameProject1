@@ -3,14 +3,56 @@ using TMPro;
 
 public class TextBoxChanger : MonoBehaviour
 {
-    public GameObject[] textBoxes;
+    public GameObject textBox;
     private int textBoxShown = 0;
-    public void Start(){
-        for (int i = 0; i < textBoxes.Length; i++){
+    [SerializeField] public string[] textBoxText;
+    public TextMeshProUGUI textInBox;
+    public ForTheAcquiredPanel forTheAcquiredPanel;
+
+    public void Start()
+    {
+        textBox.SetActive(true);
+    }
+
+    public void NextTextBox()
+    {
+        textBoxShown++;
+
+        if (textBoxShown <= textBoxText.Length)
+        {
+            textInBox.text = textBoxText[textBoxShown];
+        }
+
+        if (textInBox.text == "Berries Acquired!")
+        {
+            forTheAcquiredPanel.OpenBerriesAcquiredPanel();
+        }
+    }
+
+    public bool isLastTextBox()
+    {
+        if (textBoxShown - (textBoxText.Length - 1) == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+
+
+    /*Old version of this script, kept for documentation purposes
+    public void Start()
+    {
+        for (int i = 0; i < textBoxes.Length; i++)
+        {
             textBoxes[i].SetActive(false);
         }
 
-        if (textBoxes.Length > 0){
+        if (textBoxes.Length > 0)
+        {
             textBoxes[0].SetActive(true);
         }
     }
@@ -24,4 +66,14 @@ public class TextBoxChanger : MonoBehaviour
             textBoxes[textBoxShown].SetActive(true);
         }
     }
+
+    public bool isLastTextBox(){
+        if (textBoxShown - (textBoxes.Length - 1) == 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    */
 }
