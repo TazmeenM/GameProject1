@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Level1Button : MonoBehaviour
 {
-    public string scene = "MainMenu";
+    [SerializeField] public string scene;
     public LevelCounter levelCounter;
-    [SerializeField] int thisLevelNumber;
+    [SerializeField] public int thisLevelNumber;
     [SerializeField]private Button levelButton;
     public void Awake()
     {
@@ -19,29 +19,26 @@ public class Level1Button : MonoBehaviour
         }
         else
         {
+            Debug.Log("This button is not interactable");
             levelButton.interactable = false;
         }
         */
     }
     public void OnMouseDown()
     {
-        /*
         if (levelButton.interactable)
         {
-        */
             Debug.Log("Clicked");
             SceneManager.LoadSceneAsync(scene);
-        //}
+        }
     }
 
     public void OnMouseEnter()
     {
-        /*
         if (levelButton.interactable)
         {
-        */
             Debug.Log("Hovered");
-        //}
+        }
     }
 
 }
