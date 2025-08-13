@@ -889,13 +889,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 610404542}
-        m_TargetAssemblyTypeName: Level1Button, Assembly-CSharp
-        m_MethodName: OnMouseDown
-        m_Mode: 1
+      - m_Target: {fileID: 739926654}
+        m_TargetAssemblyTypeName: LevelCounter, Assembly-CSharp
+        m_MethodName: LevelButtonOnClick
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 610404542}
+          m_ObjectArgumentAssemblyTypeName: Level1Button, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1082,6 +1082,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df422d7a546bb048bfbeca7c006b770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelButtons:
+  - {fileID: 1718396862}
+  - {fileID: 610404542}
 --- !u!1 &843392891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,13 +1592,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1718396862}
-        m_TargetAssemblyTypeName: Level1Button, Assembly-CSharp
-        m_MethodName: OnMouseDown
-        m_Mode: 1
+      - m_Target: {fileID: 739926654}
+        m_TargetAssemblyTypeName: LevelCounter, Assembly-CSharp
+        m_MethodName: LevelButtonOnClick
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1718396862}
+          m_ObjectArgumentAssemblyTypeName: Level1Button, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
