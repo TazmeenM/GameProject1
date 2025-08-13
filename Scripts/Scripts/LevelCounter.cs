@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelCounter : MonoBehaviour
 {
     public static int levelNumber = 0;
+    [SerializeField] public Level1Button[] levelButtons;
 
     void Start()
     {
@@ -20,6 +23,18 @@ public class LevelCounter : MonoBehaviour
         if (levelPassedNumber > levelNumber)
         {
             levelNumber = levelPassedNumber;
+        }
+    }
+
+    public void LevelButtonOnClick(Level1Button clickedButton)
+    {
+        Debug.Log(clickedButton.thisLevelNumber);
+        if (levelNumber >= clickedButton.thisLevelNumber)
+        {
+            SceneManager.LoadSceneAsync(clickedButton.scene);
+        }
+        {
+            
         }
     }
 }

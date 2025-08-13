@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Level1Button : MonoBehaviour
 {
-    public string scene = "MainMenu";
+    [SerializeField] public string scene;
     public LevelCounter levelCounter;
-    [SerializeField] int thisLevelNumber;
+    [SerializeField] public int thisLevelNumber;
     [SerializeField]private Button levelButton;
     public void Awake()
     {
+        /*
         levelButton = GetComponent<Button>();
         if (LevelCounter.levelNumber >= thisLevelNumber)
         {
@@ -21,6 +22,7 @@ public class Level1Button : MonoBehaviour
             Debug.Log("This button is not interactable");
             levelButton.interactable = false;
         }
+        */
     }
     public void OnMouseDown()
     {
