@@ -19,10 +19,11 @@ public class LevelCounter : MonoBehaviour
 
     public static void LevelPassed(int levelPassedNumber)
     {
-        Debug.Log("Level Passed");
+        Debug.Log(levelPassedNumber + "Level Passed");
         if (levelPassedNumber >= levelNumber)
         {
             levelNumber = levelPassedNumber + 1;
+            Debug.Log(levelNumber + "Current Level Current Level Current Level Current Level Current Level Current Level Current Level Current Level");
         }
     }
 

@@ -20,8 +20,9 @@ public class ForTheLevelPassedPanel : MonoBehaviour
 
     }
 
-    private void OKButtonClicked()
+    public void OKButtonClicked()
     {
+        Debug.Log(LevelCounter.levelNumber + "OKButtonClicked()");
         LevelCounter.LevelPassed(currentLevelNumber);
         levelPassedPanel.gameObject.SetActive(false);
         SceneManager.LoadSceneAsync("Map");
