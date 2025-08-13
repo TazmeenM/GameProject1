@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class Rabbit : MonoBehaviour
+public class Girl : MonoBehaviour
 {
     private Renderer imageRenderer;
 

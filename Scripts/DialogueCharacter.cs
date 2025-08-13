@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class Rabbit : MonoBehaviour
+public class DialogueCharacter : MonoBehaviour
 {
+    [SerializeField] public string characterName;
     private Renderer imageRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

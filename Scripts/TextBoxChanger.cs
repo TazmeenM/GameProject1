@@ -9,9 +9,19 @@ public class TextBoxChanger : MonoBehaviour
     public TextMeshProUGUI textInBox;
     public ForTheAcquiredPanel forTheAcquiredPanel;
 
+    //For the images of the characters talking
+    Renderer imageRenderer;
+    [SerializeField] DialogueCharacter character1;
+    string character1Name;
+    string character2Name;
+    [SerializeField] DialogueCharacter character2;
+
     public void Start()
     {
+        character1Name = character1.characterName;
+        character2Name = character2.characterName;
         textBox.SetActive(true);
+        
     }
 
     public void NextTextBox()
@@ -27,6 +37,7 @@ public class TextBoxChanger : MonoBehaviour
         {
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
         }
+        characterTalkingImage();
     }
 
     public bool isLastTextBox()
@@ -38,6 +49,20 @@ public class TextBoxChanger : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    public void characterTalkingImage()
+    {
+        if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name))
+        {
+            character1.SetImageVisible();
+            character2.SetImageInvisible();
+        }
+        else if (textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
+        {
+            character2.SetImageVisible();
+            character1.SetImageInvisible();
         }
     }
     

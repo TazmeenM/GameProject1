@@ -27,7 +27,15 @@ public class NextTextBoxButton : MonoBehaviour
         else
         {
             //Levels.LevelPassed(levelNumber);
-            forTheLevelPassedPanel.OpenLevelPassedPanel(levelNumber);
+            if (scene == "Map")
+            {
+                forTheLevelPassedPanel.OpenLevelPassedPanel(levelNumber);
+            }
+            else
+            {
+                Debug.Log("Other Scene");
+                SceneManager.LoadSceneAsync(scene);
+            }
             //SceneManager.LoadSceneAsync(scene);
         }
     }
