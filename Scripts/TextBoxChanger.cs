@@ -13,15 +13,18 @@ public class TextBoxChanger : MonoBehaviour
     Renderer imageRenderer;
     [SerializeField] DialogueCharacter character1;
     string character1Name;
-    string character2Name;
     [SerializeField] DialogueCharacter character2;
+    string character2Name;
 
     public void Start()
     {
         character1Name = character1.characterName;
         character2Name = character2.characterName;
         textBox.SetActive(true);
-        
+        textInBox.text = textBoxText[0];
+        character1.SetImageInvisible();
+        character2.SetImageInvisible();
+        CharacterTalkingImage();
     }
 
     public void NextTextBox()
@@ -37,10 +40,13 @@ public class TextBoxChanger : MonoBehaviour
         {
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
         }
-        characterTalkingImage();
+        if (textInBox.text.Equals(character1Name) || textInBox.text.Equals(character2Name))
+        {
+            CharacterTalkingImage();
+        }
     }
 
-    public bool isLastTextBox()
+    public bool IsLastTextBox()
     {
         if (textBoxShown - (textBoxText.Length - 1) == 0)
         {
@@ -52,18 +58,21 @@ public class TextBoxChanger : MonoBehaviour
         }
     }
 
-    public void characterTalkingImage()
+    public void CharacterTalkingImage()
     {
         if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name))
         {
             character1.SetImageVisible();
             character2.SetImageInvisible();
+            Debug.Log("Character 1 Shown ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         }
         else if (textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
         {
             character2.SetImageVisible();
             character1.SetImageInvisible();
+            Debug.Log("Character 2 Shown ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         }
+        NextTextBox();
     }
     
 

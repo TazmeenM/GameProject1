@@ -4,6 +4,17 @@ public class DialogueCharacter : MonoBehaviour
 {
     [SerializeField] public string characterName;
     private Renderer imageRenderer;
+    private SpriteRenderer spriteRenderer;
+
+    //For the character emotions
+    public Sprite normalCharacter;
+    public Sprite happyCharacter;
+    public Sprite sadCharacter;
+
+    void Awake()
+    {
+        imageRenderer = GetComponent<Renderer>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

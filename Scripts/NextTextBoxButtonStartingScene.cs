@@ -3,12 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class NextTextBoxButtonStartingScene : MonoBehaviour
 {
-    public TextBoxChanger textBoxChanger;
+    public TextBoxChangerStartingScene textBoxChanger;
     public string scene = "Map";
 
     public void OnClick()
     {
-        if (!textBoxChanger.isLastTextBox())
+        if (!textBoxChanger.IsLastTextBox())
         {
             textBoxChanger.NextTextBox();
         }

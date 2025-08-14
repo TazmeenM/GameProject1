@@ -1110,6 +1110,8 @@ MonoBehaviour:
   - Click the rabbit to give it some berries!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
+  character1: {fileID: 0}
+  character2: {fileID: 0}
 --- !u!4 &629042390
 Transform:
   m_ObjectHideFlags: 0
@@ -1527,7 +1529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c3f7d998e11654f9c1495c89a2e7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forTheFeedRabbitPanel: {fileID: 2025269220}
 --- !u!1 &1252362575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,6 +1982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   okButton: {fileID: 2063095186}
+  rabbitFeedTextBox: {fileID: 2091180032}
 --- !u!1 &1521570202
 GameObject:
   m_ObjectHideFlags: 0

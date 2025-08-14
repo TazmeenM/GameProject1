@@ -23,7 +23,7 @@ public class TextBoxChangerStartingScene : MonoBehaviour
         }
     }
 
-    public bool isLastTextBox()
+    public bool IsLastTextBox()
     {
         if (textBoxShown - (textBoxText.Length - 1) == 0)
         {

@@ -13,16 +13,13 @@ public class NextTextBoxButton : MonoBehaviour
     public void OnClick()
     {
         Debug.Log("Next Button Clicked");
-        if (!textBoxChanger.isLastTextBox())
+        if (!textBoxChanger.IsLastTextBox())
         {
             if (textBoxChanger.textInBox.text == "Berries Acquired!")
             {
                 forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             }
-            else
-            {
-                textBoxChanger.NextTextBox();
-            }
+            textBoxChanger.NextTextBox();
         }
         else
         {
