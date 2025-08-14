@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NextTextBoxButton : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class NextTextBoxButton : MonoBehaviour
     public ForTheLevelPassedPanel forTheLevelPassedPanel;
     public string scene = "MainMenu";
     [SerializeField] int levelNumber;
+    public static bool enabled = true;
+    [SerializeField] public Button nextTextBoxButton;
     //[SerializeField] Levels levels;
 
     public void OnClick()
@@ -28,6 +31,10 @@ public class NextTextBoxButton : MonoBehaviour
             {
                 forTheLevelPassedPanel.OpenLevelPassedPanel(levelNumber);
             }
+            else if (textBoxChanger.textInBox.text == "Click the rabbit to give it some berries!")
+            {
+                EnableButton();
+            }
             else
             {
                 Debug.Log("Other Scene");
@@ -35,5 +42,17 @@ public class NextTextBoxButton : MonoBehaviour
             }
             //SceneManager.LoadSceneAsync(scene);
         }
+    }
+
+    public void EnableButton()
+    {
+        enabled = true;
+        nextTextBoxButton.interactable = true;
+    }
+
+    public void DisableButton()
+    {
+        enabled = false;
+        nextTextBoxButton.interactable = false;
     }
 }

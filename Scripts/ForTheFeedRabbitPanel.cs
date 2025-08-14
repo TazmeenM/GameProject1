@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ForTheFeedRabbitPanel : MonoBehaviour
 {
     [SerializeField] public FeedRabbitPanel feedRabbitPanel;
     [SerializeField] public ForTheInsufficientBerriesPanel forTheInsufficientBerriesPanel;
     private static bool rabbitFed = false;
+    [SerializeField] public NextTextBoxButton nextTextBoxButton;
     public void Start()
     {
         feedRabbitPanel.gameObject.SetActive(false);
@@ -19,6 +21,7 @@ public class ForTheFeedRabbitPanel : MonoBehaviour
 
     public void OpenFeedRabbitPanel()
     {
+        nextTextBoxButton.DisableButton();
         if (BerryCounter.numberOfBerries >= 5)
         {
             if (!rabbitFed)
@@ -51,6 +54,7 @@ public class ForTheFeedRabbitPanel : MonoBehaviour
         feedRabbitPanel.gameObject.SetActive(false);
         rabbitFed = true;
         Debug.Log("Rabbit was fed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        nextTextBoxButton.EnableButton();
         SceneManager.LoadSceneAsync("Level1.1");
     }
 }

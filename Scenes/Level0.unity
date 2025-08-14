@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   berriesAcquiredPanel: {fileID: 1911648619}
+  nextTextBoxButton: {fileID: 1750393804}
 --- !u!4 &167182451
 Transform:
   m_ObjectHideFlags: 0
@@ -2086,6 +2087,7 @@ MonoBehaviour:
   forTheLevelPassedPanel: {fileID: 718409514}
   scene: Map
   levelNumber: 0
+  nextTextBoxButton: {fileID: 1750393805}
 --- !u!114 &1750393805
 MonoBehaviour:
   m_ObjectHideFlags: 0

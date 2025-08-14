@@ -1688,6 +1688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   insufficientBerriesPanel: {fileID: 1072139635}
+  nextTextBoxButton: {fileID: 1901224997}
 --- !u!4 &1079366337
 Transform:
   m_ObjectHideFlags: 0
@@ -1833,6 +1834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   berriesAcquiredPanel: {fileID: 1314617084}
+  nextTextBoxButton: {fileID: 1901224997}
 --- !u!4 &1252362577
 Transform:
   m_ObjectHideFlags: 0
@@ -3382,6 +3384,7 @@ MonoBehaviour:
   forTheLevelPassedPanel: {fileID: 1599914575}
   scene: Level1.1
   levelNumber: 1
+  nextTextBoxButton: {fileID: 1901224998}
 --- !u!114 &1901224998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,6 +3525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feedRabbitPanel: {fileID: 1438968886}
   forTheInsufficientBerriesPanel: {fileID: 1079366336}
+  nextTextBoxButton: {fileID: 1901224997}
 --- !u!1 &2030388751
 GameObject:
   m_ObjectHideFlags: 0
