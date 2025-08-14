@@ -44,18 +44,8 @@ public class TextBoxChanger : MonoBehaviour
         }
         else if (textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
         {
-            if (textInBox.text.Substring("Scene".Length).Equals("Forest"))
-            {
-                background.Forest();
-            }
-            else if (textInBox.text.Substring("Scene".Length).Equals("DarkForest"))
-            {
-                background.DarkForest();
-            }
-            else
-            {
-                Debug.Log("Background exists but not changed ?????????????????????????????????????????????????????????????????????????????????//");
-            }
+            background.ChangeBackground(textInBox.text.Substring("Scene".Length));
+            NextTextBox();
         }
         else if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
         {

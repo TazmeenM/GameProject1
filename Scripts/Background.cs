@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Background : MonoBehaviour
 {
@@ -7,10 +8,16 @@ public class Background : MonoBehaviour
     //For the character emotions
     public Sprite forest;
     public Sprite darkForest;
+    private Dictionary<string, Sprite> backgrounds;
 
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        backgrounds = new Dictionary<string, Sprite>
+        {
+            {"Forest", forest},
+            {"DarkForest", darkForest}
+        };
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +32,15 @@ public class Background : MonoBehaviour
 
     }
 
+    public void ChangeBackground(string backgroundName)
+    {
+        if (backgrounds.ContainsKey(backgroundName))
+        {
+            spriteRenderer.sprite = backgrounds[backgroundName];
+        }
+    }
+
+    /*
     public void Forest()
     {
         spriteRenderer.sprite = forest;
@@ -34,5 +50,6 @@ public class Background : MonoBehaviour
     {
         spriteRenderer.sprite = darkForest;
     }
+    */
 
 }

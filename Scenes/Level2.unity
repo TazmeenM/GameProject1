@@ -1966,8 +1966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b170c6297af174b9d5fcafd7677d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forest: {fileID: 0}
-  darkForest: {fileID: 0}
+  forest: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
+  darkForest: {fileID: 9197848482490137289, guid: 236daffdc6dcdbd4a9bf8e4a14231ae7, type: 3}
 --- !u!1 &1720764621
 GameObject:
   m_ObjectHideFlags: 0
