@@ -288,8 +288,11 @@ MonoBehaviour:
   textBoxText:
   - One day the girl went into the forest to pick berries...
   - Berries Acquired!
+  - You found some berries!
   textInBox: {fileID: 1316590622}
   forTheAcquiredPanel: {fileID: 167182450}
+  character1: {fileID: 0}
+  character2: {fileID: 0}
 --- !u!4 &71877574
 Transform:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class ForTheAcquiredPanel : MonoBehaviour
     public void OpenBerriesAcquiredPanel()
     {
         berriesAcquiredPanel.gameObject.SetActive(true);
-        BerryCounter.numberOfBerries += 5;
+        BerryCounter.AddBerries(5);
 
     }
  

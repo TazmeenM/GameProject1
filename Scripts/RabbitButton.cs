@@ -3,6 +3,7 @@ using UnityEngine;
 public class RabbitButton : MonoBehaviour
 {
     [SerializeField] public ForTheFeedRabbitPanel forTheFeedRabbitPanel;
+    [SerializeField] public ForTheInsufficientBerriesPanel forTheInsufficientBerriesPanel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,9 +16,8 @@ public class RabbitButton : MonoBehaviour
 
     }
 
-    public void OnClick()
+    public void ButtonOnClick()
     {
-        Debug.Log("Rabbit Clicked");
-        forTheFeedRabbitPanel.OpenFeedRabbitPanel();
+        
     }
 }

@@ -24,14 +24,14 @@ public class BerryCounter : MonoBehaviour
         }
     }
 
-    public void AddBerries(int berriesAdded)
+    public static void AddBerries(int berriesAdded)
     {
-        Debug.Log("Berries Added");
+        Debug.Log("Berries Added YAYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY");
         numberOfBerries += berriesAdded;
         berryNumberString.text = numberOfBerries.ToString();
     }
 
-    public void RemoveBerries(int berriesRemoved)
+    public static void RemoveBerries(int berriesRemoved)
     {
         if (numberOfBerries > berriesRemoved)
         {

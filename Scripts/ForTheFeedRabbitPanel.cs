@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class ForTheFeedRabbitPanel : MonoBehaviour
 {
     [SerializeField] public FeedRabbitPanel feedRabbitPanel;
+    [SerializeField] public ForTheInsufficientBerriesPanel forTheInsufficientBerriesPanel;
     private static bool rabbitFed = false;
     public void Start()
     {
@@ -18,20 +19,29 @@ public class ForTheFeedRabbitPanel : MonoBehaviour
 
     public void OpenFeedRabbitPanel()
     {
-        if (!rabbitFed)
+        if (BerryCounter.numberOfBerries >= 5)
         {
-            feedRabbitPanel.rabbitFeedTextBox.text = "Would you like to feed the rabbit?";
-            Debug.Log("Rabbit has not been fed yet");
-            feedRabbitPanel.gameObject.SetActive(true);
-            BerryCounter.numberOfBerries -= 5;
-            rabbitFed = true;
+            if (!rabbitFed)
+            {
+                feedRabbitPanel.rabbitFeedTextBox.text = "Would you like to feed the rabbit?";
+                Debug.Log("Rabbit has not been fed yet");
+                feedRabbitPanel.gameObject.SetActive(true);
+                BerryCounter.RemoveBerries(5);
+                rabbitFed = true;
+            }
+            else
+            {
+                feedRabbitPanel.rabbitFeedTextBox.text = "You already fed the rabbit!";
+                Debug.Log("You already fed the rabbit!");
+                feedRabbitPanel.gameObject.SetActive(true);
+            }
         }
+
         else
         {
-            feedRabbitPanel.rabbitFeedTextBox.text = "You already fed the rabbit!";
-            Debug.Log("You already fed the rabbit!");
-            feedRabbitPanel.gameObject.SetActive(true);
+            forTheInsufficientBerriesPanel.OpenInsufficientBerriesPanel();
         }
+        
 
 
     }
