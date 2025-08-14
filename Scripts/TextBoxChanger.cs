@@ -41,7 +41,7 @@ public class TextBoxChanger : MonoBehaviour
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             NextTextBox();
         }
-        if (textInBox.text.Equals(character1Name) || textInBox.text.Equals(character2Name))
+        if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
         {
             CharacterTalkingImage();
         }
@@ -92,12 +92,15 @@ public class TextBoxChanger : MonoBehaviour
             //The emotions are checked in increasing length order of their names, to avoid Index Out of Bounds errors
             if (textInBox.text.Length > character2Name.Length)
             {
+                Debug.Log("Emotion Detected!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 if (textInBox.text.Equals(character2Name + "Sad"))
                 {
+                    Debug.Log("Sad Character :(((((((((((((((((((((((((())))))))))))))))))))))))))");
                     character2.SadCharacter();
                 }
                 else if (textInBox.text.Equals(character2Name + "Normal"))
                 {
+                    Debug.Log("Normal Character ____________________________________________________");
                     character2.NormalCharacter();
                 }
                 else
@@ -105,11 +108,15 @@ public class TextBoxChanger : MonoBehaviour
                     Debug.Log(textInBox.text.Substring(character2Name.Length));
                 }
             }
-        }
             else
             {
                 Debug.Log(textInBox.text);
             }
+        }
+        else
+        {
+            Debug.Log(textInBox.text);
+        }
         NextTextBox();
     }
     
