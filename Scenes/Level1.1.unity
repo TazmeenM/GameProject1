@@ -980,13 +980,13 @@ MonoBehaviour:
     the Rabbits could never be as distinguished as I am.
   - Girl
   - Well then, Mr. Tabbit, what are you doing on this fine day?
-  - Rabbit
+  - RabbitSad
   - You see...I have been hunting down this wolf who has been bothering me for a
     long time now.
   - 'He keeps trying to steal my things! '
   - Girl
   - Is there anything I can do to help?
-  - Rabbit
+  - RabbitNormal
   - Yes! There is! Follow me!
   - Oh, and take these for the road!
   - Berries Acquired!
@@ -1249,9 +1249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Girl
-  normalCharacter: {fileID: 0}
-  happyCharacter: {fileID: 0}
-  sadCharacter: {fileID: 0}
+  normalCharacter: {fileID: 9101278813714116849, guid: 42bd08bfbe0fecc4c937e88a2b1b6423, type: 3}
+  sadCharacter: {fileID: 9101278813714116849, guid: 42bd08bfbe0fecc4c937e88a2b1b6423, type: 3}
 --- !u!114 &904999004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2051,9 +2050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Rabbit
-  normalCharacter: {fileID: 0}
-  happyCharacter: {fileID: 0}
-  sadCharacter: {fileID: 0}
+  normalCharacter: {fileID: -7609197184796730273, guid: c2f66d4649459dc458fd492038d56e83, type: 3}
+  sadCharacter: {fileID: -6495249980307478639, guid: 8dc3964b53359a041ae9b58ef43d1bf8, type: 3}
 --- !u!212 &1777049171
 SpriteRenderer:
   m_ObjectHideFlags: 0

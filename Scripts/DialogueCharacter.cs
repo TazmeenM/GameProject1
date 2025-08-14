@@ -8,12 +8,12 @@ public class DialogueCharacter : MonoBehaviour
 
     //For the character emotions
     public Sprite normalCharacter;
-    public Sprite happyCharacter;
     public Sprite sadCharacter;
 
     void Awake()
     {
         imageRenderer = GetComponent<Renderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,4 +37,15 @@ public class DialogueCharacter : MonoBehaviour
     {
         imageRenderer.enabled = false;
     }
+
+    public void NormalCharacter()
+    {
+        spriteRenderer.sprite = normalCharacter;
+    }
+
+        public void SadCharacter()
+    {
+        spriteRenderer.sprite = sadCharacter;
+    }
+
 }

@@ -39,6 +39,7 @@ public class TextBoxChanger : MonoBehaviour
         if (textInBox.text == "Berries Acquired!")
         {
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
+            NextTextBox();
         }
         if (textInBox.text.Equals(character1Name) || textInBox.text.Equals(character2Name))
         {
@@ -65,13 +66,50 @@ public class TextBoxChanger : MonoBehaviour
             character1.SetImageVisible();
             character2.SetImageInvisible();
             Debug.Log("Character 1 Shown ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            //The emotions are checked in increasing length order of their names, to avoid Index Out of Bounds errors
+            if (textInBox.text.Length > character1Name.Length)
+            {
+                if (textInBox.text.Equals(character1Name + "Sad"))
+                {
+                    character1.SadCharacter();
+                }
+                else if (textInBox.text.Equals(character1Name + "Normal"))
+                {
+                    character1.NormalCharacter();
+                }
+                else
+                {
+                    Debug.Log(textInBox.text.Substring(character1Name.Length));
+                }
+            }
         }
+
         else if (textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
         {
             character2.SetImageVisible();
             character1.SetImageInvisible();
             Debug.Log("Character 2 Shown ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            //The emotions are checked in increasing length order of their names, to avoid Index Out of Bounds errors
+            if (textInBox.text.Length > character2Name.Length)
+            {
+                if (textInBox.text.Equals(character2Name + "Sad"))
+                {
+                    character2.SadCharacter();
+                }
+                else if (textInBox.text.Equals(character2Name + "Normal"))
+                {
+                    character2.NormalCharacter();
+                }
+                else
+                {
+                    Debug.Log(textInBox.text.Substring(character2Name.Length));
+                }
+            }
         }
+            else
+            {
+                Debug.Log(textInBox.text);
+            }
         NextTextBox();
     }
     
