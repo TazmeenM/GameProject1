@@ -32,7 +32,7 @@ public class TextBoxChanger : MonoBehaviour
     {
         textBoxShown++;
 
-        if (textBoxShown <= textBoxText.Length)
+        if (textBoxShown < textBoxText.Length)
         {
             textInBox.text = textBoxText[textBoxShown];
         }
@@ -42,7 +42,7 @@ public class TextBoxChanger : MonoBehaviour
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             NextTextBox();
         }
-        else if (textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
+        else if (textInBox.text.Length == "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
         {
             background.ChangeBackground(textInBox.text.Substring("Scene".Length));
             NextTextBox();
@@ -72,6 +72,11 @@ public class TextBoxChanger : MonoBehaviour
             character1.SetImageVisible();
             character2.SetImageInvisible();
             Debug.Log("Character 1 Shown ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            if (textInBox.text.Length > character1Name.Length)
+            {
+                character1.ChangeEmotion(textInBox.text.Substring(character1Name.Length));
+            }
+            /*
             //The emotions are checked in increasing length order of their names, to avoid Index Out of Bounds errors
             if (textInBox.text.Length > character1Name.Length)
             {
@@ -88,6 +93,7 @@ public class TextBoxChanger : MonoBehaviour
                     Debug.Log(textInBox.text.Substring(character1Name.Length));
                 }
             }
+            */
         }
 
         else if (textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
@@ -95,6 +101,11 @@ public class TextBoxChanger : MonoBehaviour
             character2.SetImageVisible();
             character1.SetImageInvisible();
             Debug.Log("Character 2 Shown ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            if (textInBox.text.Length > character2Name.Length)
+            {
+                character2.ChangeEmotion(textInBox.text.Substring(character2Name.Length));
+            }
+            /*
             //The emotions are checked in increasing length order of their names, to avoid Index Out of Bounds errors
             if (textInBox.text.Length > character2Name.Length)
             {
@@ -118,6 +129,7 @@ public class TextBoxChanger : MonoBehaviour
             {
                 Debug.Log(textInBox.text);
             }
+            */
         }
         else
         {
