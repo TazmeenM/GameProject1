@@ -9,7 +9,7 @@ public class NextTextBoxButton : MonoBehaviour
     public ForTheLevelPassedPanel forTheLevelPassedPanel;
     public string scene = "MainMenu";
     [SerializeField] int levelNumber;
-    public static bool enabled = true;
+    //public static bool enabled = true;
     [SerializeField] public Button nextTextBoxButton;
     //[SerializeField] Levels levels;
 
@@ -46,13 +46,13 @@ public class NextTextBoxButton : MonoBehaviour
 
     public void EnableButton()
     {
-        enabled = true;
+        //enabled = true;
         nextTextBoxButton.interactable = true;
     }
 
     public void DisableButton()
     {
-        enabled = false;
+        //enabled = false;
         nextTextBoxButton.interactable = false;
     }
 }

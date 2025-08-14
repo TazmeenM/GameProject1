@@ -8,6 +8,7 @@ public class TextBoxChanger : MonoBehaviour
     [SerializeField] public string[] textBoxText;
     public TextMeshProUGUI textInBox;
     public ForTheAcquiredPanel forTheAcquiredPanel;
+    public Background background;
 
     //For the images of the characters talking
     Renderer imageRenderer;
@@ -41,7 +42,22 @@ public class TextBoxChanger : MonoBehaviour
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             NextTextBox();
         }
-        if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
+        else if (textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
+        {
+            if (textInBox.text.Substring("Scene".Length).Equals("Forest"))
+            {
+                background.Forest();
+            }
+            else if (textInBox.text.Substring("Scene".Length).Equals("DarkForest"))
+            {
+                background.DarkForest();
+            }
+            else
+            {
+                Debug.Log("Background exists but not changed ?????????????????????????????????????????????????????????????????????????????????//");
+            }
+        }
+        else if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
         {
             CharacterTalkingImage();
         }

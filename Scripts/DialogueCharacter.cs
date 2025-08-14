@@ -43,7 +43,7 @@ public class DialogueCharacter : MonoBehaviour
         spriteRenderer.sprite = normalCharacter;
     }
 
-        public void SadCharacter()
+    public void SadCharacter()
     {
         spriteRenderer.sprite = sadCharacter;
     }

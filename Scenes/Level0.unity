@@ -291,6 +291,7 @@ MonoBehaviour:
   - You found some berries!
   textInBox: {fileID: 1316590622}
   forTheAcquiredPanel: {fileID: 167182450}
+  background: {fileID: 0}
   character1: {fileID: 0}
   character2: {fileID: 0}
 --- !u!4 &71877574
@@ -2376,8 +2377,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -340461541
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
