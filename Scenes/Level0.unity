@@ -292,6 +292,7 @@ MonoBehaviour:
   textInBox: {fileID: 1316590622}
   forTheAcquiredPanel: {fileID: 167182450}
   background: {fileID: 0}
+  decisionPanel: {fileID: 0}
   character1: {fileID: 0}
   character2: {fileID: 0}
 --- !u!4 &71877574
@@ -2472,7 +2473,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782946997}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
