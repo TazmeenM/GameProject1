@@ -28,6 +28,25 @@ public class TextBoxChanger : MonoBehaviour
         character1.SetImageInvisible();
         character2.SetImageInvisible();
         CharacterTalkingImage();
+
+        if (textInBox.text.Equals("Berries Acquired!"))
+        {
+            forTheAcquiredPanel.OpenBerriesAcquiredPanel();
+            NextTextBox();
+        }
+        else if (textInBox.text.Equals("Decision"))
+        {
+            decisionPanel.OpenDecisionPanel();
+        }
+        else if (textInBox.text.Length >= "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
+        {
+            background.ChangeBackground(textInBox.text.Substring("Scene".Length));
+            NextTextBox();
+        }
+        else if (textInBox.text.Length >= (Math.Min(character1Name.Length, character2Name.Length)) && (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name)))
+        {
+            CharacterTalkingImage();
+        }
     }
 
     public void NextTextBox()
@@ -57,6 +76,7 @@ public class TextBoxChanger : MonoBehaviour
         {
             CharacterTalkingImage();
         }
+        
     }
 
     public bool IsLastTextBox()
