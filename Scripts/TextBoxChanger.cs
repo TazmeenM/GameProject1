@@ -63,6 +63,11 @@ public class TextBoxChanger : MonoBehaviour
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             NextTextBox();
         }
+        else if (textInBox.text.Equals("GiveRabbitBerries"))
+        {
+            BerryCounter.RemoveBerries(5);
+            Debug.Log("Berries Given---------------------------------------------------------------------------------------");
+        }
         else if (textInBox.text.Equals("Decision"))
         {
             decisionPanel.OpenDecisionPanel();

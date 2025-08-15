@@ -1203,25 +1203,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 431962827}
   textBoxText:
+  - RabbitSad
+  - No? You don't want to come along anymore? You'd be okay with the wolf continuing
+    to steal my things?
+  - You'd be okay with the wolf continuing to BULLY ME?!
   - Girl
-  - Where are we going?
-  - Rabbit
-  - You'll see, soon enough.
-  - Five minutes later...
-  - SceneDarkForest
+  - Okay, okay, calm down, I'll come with you.
+  - RabbitNormal
+  - Yippee! I knew you wouldn't let this injustice slide!
   - RabbitEvil
-  - It's almost time for me to put my plan into action...
-  - SceneForest
+  - And that you'd walk right into my trap.
   - Girl
   - Huh?
   - RabbitNormal
-  - Nothing, nothing. Let's keep walking.
-  - SceneDarkForest
+  - Nothing, nothing. By the way, could you give me some more of those berries? Crying
+    made me hungry.
   - Girl
-  - Are we going into the deeper part of the forest?
+  - What about the berries you just gave me? Don't you have more?
   - Rabbit
-  - This is where the wolf lives. Would you like to continue?
-  - Decision
+  - Please?
+  - Girl
+  - Fine.
+  - GiveRabbitBerries
+  - Rabbit
+  - Okay, let's go!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}
