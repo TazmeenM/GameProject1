@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class TextBoxChanger : MonoBehaviour
 {
@@ -42,12 +43,12 @@ public class TextBoxChanger : MonoBehaviour
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             NextTextBox();
         }
-        else if (textInBox.text.Length == "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
+        else if (textInBox.text.Length >= "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
         {
             background.ChangeBackground(textInBox.text.Substring("Scene".Length));
             NextTextBox();
         }
-        else if (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name))
+        else if (textInBox.text.Length >= (Math.Min(character1Name.Length, character2Name.Length)) && (textInBox.text.Substring(0, character1Name.Length).Equals(character1Name) || textInBox.text.Substring(0, character2Name.Length).Equals(character2Name)))
         {
             CharacterTalkingImage();
         }

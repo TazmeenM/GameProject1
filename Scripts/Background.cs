@@ -34,9 +34,11 @@ public class Background : MonoBehaviour
 
     public void ChangeBackground(string backgroundName)
     {
+        Debug.Log("Background Changer Called!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         if (backgrounds.ContainsKey(backgroundName))
         {
             spriteRenderer.sprite = backgrounds[backgroundName];
+            Debug.Log("Background Changed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
     }
 
