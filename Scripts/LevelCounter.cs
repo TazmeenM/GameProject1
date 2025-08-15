@@ -7,8 +7,9 @@ public class LevelCounter : MonoBehaviour
 {
     public static int levelNumber = 0;
     [SerializeField] public Level1Button[] levelButtons;
-    private static int[] decisionsMade;
+    public static int[] decisionsMade;
     private static int numberOfLevels;
+    private string scene;
 
     void Start()
     {
@@ -40,11 +41,20 @@ public class LevelCounter : MonoBehaviour
 
     public void LevelButtonOnClick(Level1Button clickedButton)
     {
+        string scene = clickedButton.scene;
         Debug.Log(clickedButton.thisLevelNumber);
         Debug.Log(levelNumber + "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         if (levelNumber >= clickedButton.thisLevelNumber)
         {
-            SceneManager.LoadSceneAsync(clickedButton.scene);
+            if (decisionsMade[levelNumber] != 0)
+            {
+                scene += ("-" + LevelCounter.decisionsMade[levelNumber]);
+            }
+            else
+            {
+                scene += "-0";
+            }
+            SceneManager.LoadSceneAsync(scene);
         }
         {
 
