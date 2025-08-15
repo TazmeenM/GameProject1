@@ -19,6 +19,7 @@ public class DecisionPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI option2Text;
     [SerializeField] private int nextLevelNumber;
     [SerializeField] private string scene;
+    private string fullScene;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,8 +47,8 @@ public class DecisionPanel : MonoBehaviour
         Debug.Log("Option 1");
         decisionPanel.gameObject.SetActive(false);
         nextTextBoxButton.EnableButton();
-        scene += "-0";
-        SceneManager.LoadSceneAsync(scene);
+        fullScene = scene + "-0";
+        SceneManager.LoadSceneAsync(fullScene);
 
     }
 
@@ -57,8 +58,8 @@ public class DecisionPanel : MonoBehaviour
         Debug.Log("Option 2");
         decisionPanel.gameObject.SetActive(false);
         nextTextBoxButton.EnableButton();
-        scene += "-1";
-        SceneManager.LoadSceneAsync(scene);
+        fullScene = scene + "-1";
+        SceneManager.LoadSceneAsync(fullScene);
     }
     
 

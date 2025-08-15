@@ -10,6 +10,7 @@ public class LevelCounter : MonoBehaviour
     public static int[] decisionsMade;
     private static int numberOfLevels;
     private string scene;
+    private static LevelCounter instance;
 
     void Start()
     {
@@ -17,6 +18,15 @@ public class LevelCounter : MonoBehaviour
 
     void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+
+        DontDestroyOnLoad(gameObject);
+
         if (levelButtons.Length > numberOfLevels)
         {
             numberOfLevels = levelButtons.Length;
@@ -26,7 +36,6 @@ public class LevelCounter : MonoBehaviour
         {
             decisionsMade[i] = 0;
         }
-        DontDestroyOnLoad(gameObject);
     }
 
     public static void LevelPassed(int levelPassedNumber)
@@ -41,14 +50,14 @@ public class LevelCounter : MonoBehaviour
 
     public void LevelButtonOnClick(Level1Button clickedButton)
     {
-        string scene = clickedButton.scene;
+        scene = clickedButton.scene;
         Debug.Log(clickedButton.thisLevelNumber);
-        Debug.Log(levelNumber + "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        Debug.Log(scene + levelNumber + " " + LevelCounter.decisionsMade[clickedButton.thisLevelNumber] + "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
         if (levelNumber >= clickedButton.thisLevelNumber)
         {
             if (clickedButton.stemmedFromDecision)
             {
-                scene += ("-" + LevelCounter.decisionsMade[levelNumber]);
+                scene += ("-" + LevelCounter.decisionsMade[clickedButton.thisLevelNumber]);
                 Debug.Log(scene + "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
             }
 
@@ -61,7 +70,7 @@ public class LevelCounter : MonoBehaviour
 
     public static void PathDecision(int decisionLevelNumber, int decisionNumber)
     {
-        Debug.Log(numberOfLevels + " " + decisionNumber);
+        Debug.Log(numberOfLevels + " " + decisionLevelNumber + " " + decisionNumber);
         decisionsMade[decisionLevelNumber] = decisionNumber;
     }
 
