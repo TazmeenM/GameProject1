@@ -64,7 +64,7 @@ public class TextBoxChanger : MonoBehaviour
         }
         else if (textInBox.text.Equals("GiveRabbitBerries"))
         {
-            GiveRabbitBerries(10);
+            GiveRabbitBerries(5);
             Debug.Log("Berries Given---------------------------------------------------------------------------------------");
             NextTextBox();
         }

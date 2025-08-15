@@ -43,6 +43,7 @@ public class DecisionPanel : MonoBehaviour
     public void Option1Clicked()
     {
         LevelCounter.PathDecision(nextLevelNumber, 0);
+        Debug.Log("Option 1");
         decisionPanel.gameObject.SetActive(false);
         nextTextBoxButton.EnableButton();
         scene += "-0";
@@ -53,6 +54,7 @@ public class DecisionPanel : MonoBehaviour
     public void Option2Clicked()
     {
         LevelCounter.PathDecision(nextLevelNumber, 1);
+        Debug.Log("Option 2");
         decisionPanel.gameObject.SetActive(false);
         nextTextBoxButton.EnableButton();
         scene += "-1";

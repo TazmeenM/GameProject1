@@ -48,14 +48,8 @@ public class LevelCounter : MonoBehaviour
         {
             if (clickedButton.stemmedFromDecision)
             {
-                if (decisionsMade[levelNumber] != 0)
-                {
-                    scene += ("-" + LevelCounter.decisionsMade[levelNumber]);
-                }
-                else
-                {
-                    scene += "-0";
-                }
+                scene += ("-" + LevelCounter.decisionsMade[levelNumber]);
+                Debug.Log(scene + "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
             }
 
             SceneManager.LoadSceneAsync(scene);
@@ -67,7 +61,7 @@ public class LevelCounter : MonoBehaviour
 
     public static void PathDecision(int decisionLevelNumber, int decisionNumber)
     {
-        Debug.Log(numberOfLevels);
+        Debug.Log(numberOfLevels + " " + decisionNumber);
         decisionsMade[decisionLevelNumber] = decisionNumber;
     }
 
