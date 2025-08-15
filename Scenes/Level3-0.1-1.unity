@@ -1334,6 +1334,7 @@ MonoBehaviour:
   - Oh, um...Hey, what's up there? I'll go check it out!
   - Girl
   - Hey, wait for me!
+  - End
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}

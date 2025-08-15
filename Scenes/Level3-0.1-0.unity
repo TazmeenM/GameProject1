@@ -984,13 +984,14 @@ MonoBehaviour:
   - Girl
   - Didn't I just give you berries?
   - Rabbit
-  - But I want more! I think 10 should be enough.
+  - But I want more! I think 5 should be enough.
   - Girl
   - Fine
   - GiveRabbitBerries
   - Rabbit
   - ...
   - Yay thank you! Let's keep going! I think I see our destination ahead!
+  - End
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}

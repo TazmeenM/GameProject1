@@ -72,6 +72,10 @@ public class TextBoxChanger : MonoBehaviour
         {
             decisionPanel.OpenDecisionPanel();
         }
+        else if (textInBox.text.Equals("End"))
+        {
+            SceneManager.LoadSceneAsync("EndScene");
+        }
         else if (textInBox.text.Length >= "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
         {
             background.ChangeBackground(textInBox.text.Substring("Scene".Length));
