@@ -43,4 +43,9 @@ public class BerryCounter : MonoBehaviour
         }
         berryNumberString.text = numberOfBerries.ToString();
     }
+
+    public static void Reset()
+    {
+        numberOfBerries = 0;
+    }
 }

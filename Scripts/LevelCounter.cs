@@ -57,7 +57,7 @@ public class LevelCounter : MonoBehaviour
                     scene += "-0";
                 }
             }
-            
+
             SceneManager.LoadSceneAsync(scene);
         }
         {
@@ -69,5 +69,14 @@ public class LevelCounter : MonoBehaviour
     {
         Debug.Log(numberOfLevels);
         decisionsMade[decisionLevelNumber] = decisionNumber;
+    }
+
+    public static void Reset()
+    {
+        levelNumber = 0;
+        for (int i = 0; i < decisionsMade.Length; i++)
+        {
+            decisionsMade[i] = 0;
+        }
     }
 }
