@@ -18,7 +18,6 @@ public class NextTextBoxButtonEndScene : MonoBehaviour
         }
         else
         {
-            endScenePanel.OpenEndScenePanel();
         }
     }
 

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class EndScenePanel : MonoBehaviour
 {
     //From other GameObjects
-    [SerializeField] public NextTextBoxButtonEndScene nextTextBoxButton;
     [SerializeField] private GameObject endScenePanel;
 
     //For the buttons
@@ -21,12 +20,6 @@ public class EndScenePanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    public void OpenEndScenePanel()
-    {
-        endScenePanel.gameObject.SetActive(true);
 
     }
 
