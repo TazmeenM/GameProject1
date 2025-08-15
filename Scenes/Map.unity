@@ -585,6 +585,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1952704536}
+  - {fileID: 1053680782}
   m_Father: {fileID: 192765159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1482,7 +1483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053680782}
   - component: {fileID: 1053680781}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Berries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1552,12 +1553,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053680780}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -916.9, y: 638.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -71.89032, y: -2.9442444, z: 0}
   m_LocalScale: {x: 15.176879, y: 15.176879, z: 15.176879}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 270197632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1103395781
 GameObject:
@@ -2355,4 +2356,3 @@ SceneRoots:
   - {fileID: 462258542}
   - {fileID: 192765159}
   - {fileID: 1893297427}
-  - {fileID: 1053680782}

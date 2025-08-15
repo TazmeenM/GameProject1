@@ -292,7 +292,6 @@ RectTransform:
   - {fileID: 1325214759}
   - {fileID: 1849638218}
   - {fileID: 349115175}
-  - {fileID: 410853196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -675,7 +674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410853196}
   - component: {fileID: 410853195}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Berries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,11 +745,11 @@ Transform:
   m_GameObject: {fileID: 410853194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -403.2, y: 200.5, z: 0}
+  m_LocalPosition: {x: 442.2058, y: -440.4992, z: 0}
   m_LocalScale: {x: 15.176879, y: 15.176879, z: 15.176879}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 52057695}
+  m_Father: {fileID: 1325214759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431962827
 GameObject:
@@ -1658,6 +1657,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 504402944}
+  - {fileID: 410853196}
   m_Father: {fileID: 52057695}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2015,7 +2015,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -340461541
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
