@@ -8,7 +8,9 @@ public class Level1Button : MonoBehaviour
     [SerializeField] public string scene;
     public LevelCounter levelCounter;
     [SerializeField] public int thisLevelNumber;
-    [SerializeField]private Button levelButton;
+    [SerializeField] private Button levelButton;
+    [SerializeField] public bool stemmedFromDecision;
+
     public void Awake()
     {
         /*

@@ -484,6 +484,7 @@ MonoBehaviour:
   levelCounter: {fileID: 0}
   thisLevelNumber: 0
   levelButton: {fileID: 0}
+  stemmedFromDecision: 0
 --- !u!212 &223305824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -761,6 +762,7 @@ MonoBehaviour:
   levelCounter: {fileID: 739926654}
   thisLevelNumber: 2
   levelButton: {fileID: 280897674}
+  stemmedFromDecision: 0
 --- !u!114 &280897674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,6 +1012,7 @@ MonoBehaviour:
   levelCounter: {fileID: 739926654}
   thisLevelNumber: 1
   levelButton: {fileID: 610404543}
+  stemmedFromDecision: 0
 --- !u!114 &610404543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2073,6 +2076,7 @@ MonoBehaviour:
   levelCounter: {fileID: 739926654}
   thisLevelNumber: 0
   levelButton: {fileID: 1718396863}
+  stemmedFromDecision: 0
 --- !u!114 &1718396863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,6 +2240,7 @@ MonoBehaviour:
   levelCounter: {fileID: 739926654}
   thisLevelNumber: 3
   levelButton: {fileID: 1888084781}
+  stemmedFromDecision: 1
 --- !u!114 &1888084781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2354,6 +2359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c4919af605f68438a404b4feb90716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelNumber: 0
+  scene: 
 --- !u!1 &1893297424
 GameObject:
   m_ObjectHideFlags: 0

@@ -217,7 +217,8 @@ MonoBehaviour:
   option2: {fileID: 1238988982}
   option1Text: {fileID: 34627869}
   option2Text: {fileID: 1913965151}
-  nextLevelNumber: 3
+  nextLevelNumber: 0
+  scene: Level2.1
 --- !u!1 &33904652
 GameObject:
   m_ObjectHideFlags: 0

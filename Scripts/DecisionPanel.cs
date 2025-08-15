@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DecisionPanel : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class DecisionPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI option1Text;
     [SerializeField] private TextMeshProUGUI option2Text;
     [SerializeField] private int nextLevelNumber;
+    [SerializeField] private string scene;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +45,9 @@ public class DecisionPanel : MonoBehaviour
         LevelCounter.PathDecision(nextLevelNumber, 0);
         decisionPanel.gameObject.SetActive(false);
         nextTextBoxButton.EnableButton();
+        scene += "-0";
+        SceneManager.LoadSceneAsync(scene);
+
     }
 
     public void Option2Clicked()
@@ -50,6 +55,8 @@ public class DecisionPanel : MonoBehaviour
         LevelCounter.PathDecision(nextLevelNumber, 1);
         decisionPanel.gameObject.SetActive(false);
         nextTextBoxButton.EnableButton();
+        scene += "-1";
+        SceneManager.LoadSceneAsync(scene);
     }
     
 
