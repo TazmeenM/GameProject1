@@ -11,6 +11,7 @@ public class DialogueCharacter : MonoBehaviour
     //For the character emotions
     public Sprite normalCharacter;
     public Sprite sadCharacter;
+    public Sprite evilCharacter;
 
     void Awake()
     {
@@ -19,7 +20,8 @@ public class DialogueCharacter : MonoBehaviour
         emotions = new Dictionary<string, Sprite>
         {
             {"Normal", normalCharacter},
-            {"Sad", sadCharacter}
+            {"Sad", sadCharacter},
+            {"Evil", evilCharacter}
         };
     }
 

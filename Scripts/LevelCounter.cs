@@ -7,6 +7,8 @@ public class LevelCounter : MonoBehaviour
 {
     public static int levelNumber = 0;
     [SerializeField] public Level1Button[] levelButtons;
+    private static int[] decisionsMade;
+    private static int numberOfLevels;
 
     void Start()
     {
@@ -14,6 +16,12 @@ public class LevelCounter : MonoBehaviour
 
     void Awake()
     {
+        numberOfLevels = levelButtons.Length;
+        decisionsMade = new int[numberOfLevels];
+        for (int i = 0; i < decisionsMade.Length; i++)
+        {
+            decisionsMade[i] = 0;
+        }
         DontDestroyOnLoad(gameObject);
     }
 
@@ -36,7 +44,12 @@ public class LevelCounter : MonoBehaviour
             SceneManager.LoadSceneAsync(clickedButton.scene);
         }
         {
-            
+
         }
+    }
+
+    public static void PathDecision(int levelNumber, int decisionNumber)
+    {
+        decisionsMade[levelNumber] = decisionNumber;
     }
 }

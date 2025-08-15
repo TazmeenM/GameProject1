@@ -10,6 +10,7 @@ public class TextBoxChanger : MonoBehaviour
     public TextMeshProUGUI textInBox;
     public ForTheAcquiredPanel forTheAcquiredPanel;
     public Background background;
+    public DecisionPanel decisionPanel;
 
     //For the images of the characters talking
     Renderer imageRenderer;
@@ -38,10 +39,14 @@ public class TextBoxChanger : MonoBehaviour
             textInBox.text = textBoxText[textBoxShown];
         }
 
-        if (textInBox.text == "Berries Acquired!")
+        if (textInBox.text.Equals("Berries Acquired!"))
         {
             forTheAcquiredPanel.OpenBerriesAcquiredPanel();
             NextTextBox();
+        }
+        else if (textInBox.text.Equals("Decision"))
+        {
+            decisionPanel.OpenDecisionPanel();
         }
         else if (textInBox.text.Length >= "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))
         {
