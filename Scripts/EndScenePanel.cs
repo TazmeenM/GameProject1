@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EndScenePanel : MonoBehaviour
 {
     //From other GameObjects
-    [SerializeField] public NextTextBoxButtonGameOver nextTextBoxButton;
+    [SerializeField] public NextTextBoxButtonEndScene nextTextBoxButton;
     [SerializeField] private GameObject endScenePanel;
 
     //For the buttons
@@ -14,7 +14,7 @@ public class EndScenePanel : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        endScenePanel.gameObject.SetActive(false);
+        endScenePanel.gameObject.SetActive(true);
         okButton.onClick.AddListener(OKButtonClicked);
     }
 

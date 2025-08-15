@@ -70,8 +70,12 @@ public class LevelCounter : MonoBehaviour
 
     public static void PathDecision(int decisionLevelNumber, int decisionNumber)
     {
-        Debug.Log(numberOfLevels + " " + decisionLevelNumber + " " + decisionNumber);
-        decisionsMade[decisionLevelNumber] = decisionNumber;
+        if (decisionLevelNumber <= numberOfLevels)
+        {
+            Debug.Log(numberOfLevels + " " + decisionLevelNumber + " " + decisionNumber);
+            decisionsMade[decisionLevelNumber] = decisionNumber;
+        }
+        
     }
 
     public static void Reset()

@@ -74,6 +74,7 @@ public class TextBoxChanger : MonoBehaviour
         }
         else if (textInBox.text.Equals("End"))
         {
+            Debug.Log("END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             SceneManager.LoadSceneAsync("EndScene");
         }
         else if (textInBox.text.Length >= "Scene".Length && textInBox.text.Substring(0, "Scene".Length).Equals("Scene"))

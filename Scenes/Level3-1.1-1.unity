@@ -1226,6 +1226,7 @@ MonoBehaviour:
   - GiveRabbitBerries
   - Rabbit
   - Thank you! I feel much better now! Let's keep going!
+  - End
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}

@@ -1105,7 +1105,7 @@ MonoBehaviour:
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}
-  decisionPanel: {fileID: 0}
+  decisionPanel: {fileID: 1724735666}
   character1: {fileID: 904999003}
   character2: {fileID: 1777049170}
 --- !u!4 &629042390

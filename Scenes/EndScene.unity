@@ -842,8 +842,6 @@ MonoBehaviour:
   textBox: {fileID: 431962827}
   textBoxText:
   - Rabbit
-  - Oh? You don't have any more berries?
-  - Well then, I guess I'm just going to have to eat you instead!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 0}
   background: {fileID: 1689966989}
@@ -1209,7 +1207,6 @@ GameObject:
   - component: {fileID: 1237643962}
   - component: {fileID: 1237643966}
   - component: {fileID: 1237643965}
-  - component: {fileID: 1237643964}
   - component: {fileID: 1237643967}
   m_Layer: 5
   m_Name: EndScenePanel
@@ -1240,21 +1237,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 34.922}
   m_SizeDelta: {x: -272.2114, y: -153.1556}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1237643964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237643961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212beac446c3ba14b9b5a76003f9ceb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextTextBoxButton: {fileID: 1901225001}
-  gameOverPanel: {fileID: 1237643961}
-  okButton: {fileID: 483605241}
 --- !u!114 &1237643965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1305,9 +1287,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bac22444088754ebc2f0f34c65de70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextTextBoxButton: {fileID: 0}
-  endScenePanel: {fileID: 0}
-  okButton: {fileID: 0}
+  nextTextBoxButton: {fileID: 1901225002}
+  endScenePanel: {fileID: 1237643961}
+  okButton: {fileID: 483605241}
 --- !u!1 &1689966986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1606,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3366454803965065955, guid: 28bfcf614b5f2bd43bd15c5f64155265, type: 3}
+  m_Sprite: {fileID: -7609197184796730273, guid: c2f66d4649459dc458fd492038d56e83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1662,7 +1644,6 @@ GameObject:
   - component: {fileID: 1901225000}
   - component: {fileID: 1901224999}
   - component: {fileID: 1901224998}
-  - component: {fileID: 1901225001}
   - component: {fileID: 1901225002}
   m_Layer: 5
   m_Name: NextTextBoxButton
@@ -1735,7 +1716,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901225001}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NextTextBoxButtonGameOver, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -1785,22 +1766,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901224995}
   m_CullTransparentMesh: 1
---- !u!114 &1901225001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901224995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7bce9f5aee18e4c847a9a54cea8679, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBoxChanger: {fileID: 629042389}
-  scene: MainMenu
-  nextTextBoxButton: {fileID: 1901224998}
-  gameOverPanel: {fileID: 1237643964}
 --- !u!114 &1901225002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1813,10 +1778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdbd3bd1e08219343905e1b122d9fddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBoxChanger: {fileID: 0}
+  textBoxChanger: {fileID: 629042389}
   scene: Map
-  nextTextBoxButton: {fileID: 0}
-  endScenePanel: {fileID: 0}
+  nextTextBoxButton: {fileID: 1901224998}
+  endScenePanel: {fileID: 1237643967}
 --- !u!1 &2030388751
 GameObject:
   m_ObjectHideFlags: 0
