@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
   option1Text: {fileID: 34627869}
   option2Text: {fileID: 1913965151}
   nextLevelNumber: 0
-  scene: Level2.1
+  scene: Level3-0.1
 --- !u!1 &33904652
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes
+  m_text: Right
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1205,23 +1205,11 @@ MonoBehaviour:
   textBox: {fileID: 431962827}
   textBoxText:
   - Girl
-  - Where are we going?
+  - It's starting to get really dark...
   - Rabbit
-  - You'll see, soon enough.
-  - Five minutes later...
-  - SceneDarkForest
-  - RabbitEvil
-  - It's almost time for me to put my plan into action...
-  - SceneForest
-  - Girl
-  - Huh?
-  - RabbitNormal
-  - Nothing, nothing. Let's keep walking.
-  - SceneDarkForest
-  - Girl
-  - Are we going into the deeper part of the forest?
-  - Rabbit
-  - This is where the wolf lives. Would you like to continue?
+  - Don't worry, it's still daytime. It just looks dark because of all the trees.
+  - Ah! We've come across the first junction in the road. Do you think we should
+    go right or left?
   - Decision
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
@@ -2263,7 +2251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Would you like to continue going with the Tabbit?
+  m_text: Would you like to go right or left?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2583,7 +2571,7 @@ SpriteRenderer:
   m_SortingLayerID: -340461541
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
+  m_Sprite: {fileID: 9197848482490137289, guid: 236daffdc6dcdbd4a9bf8e4a14231ae7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3233,7 +3221,7 @@ MonoBehaviour:
   forTheAcquiredPanel: {fileID: 1252362576}
   forTheLevelPassedPanel: {fileID: 1599914575}
   scene: Map
-  levelNumber: 2
+  levelNumber: 3
   nextTextBoxButton: {fileID: 1901224998}
 --- !u!114 &1901224998
 MonoBehaviour:
@@ -3386,7 +3374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: Left
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

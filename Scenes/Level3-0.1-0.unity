@@ -217,8 +217,8 @@ MonoBehaviour:
   option2: {fileID: 1238988982}
   option1Text: {fileID: 34627869}
   option2Text: {fileID: 1913965151}
-  nextLevelNumber: 0
-  scene: Level2.1
+  nextLevelNumber: 3
+  scene: 
 --- !u!1 &33904652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,25 +1204,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 431962827}
   textBoxText:
-  - Girl
-  - Where are we going?
-  - Rabbit
-  - You'll see, soon enough.
-  - Five minutes later...
   - SceneDarkForest
+  - Rabbit
+  - Yippee, Let's keep going!
   - RabbitEvil
-  - It's almost time for me to put my plan into action...
-  - SceneForest
+  - And walk further into my trap...
   - Girl
   - Huh?
   - RabbitNormal
-  - Nothing, nothing. Let's keep walking.
-  - SceneDarkForest
+  - Oh, nothing. Here, have some more berries for the road.
+  - Berries Acquired!
   - Girl
-  - Are we going into the deeper part of the forest?
-  - Rabbit
-  - This is where the wolf lives. Would you like to continue?
-  - Decision
+  - Thank you!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}
@@ -2583,7 +2576,7 @@ SpriteRenderer:
   m_SortingLayerID: -340461541
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
+  m_Sprite: {fileID: 9197848482490137289, guid: 236daffdc6dcdbd4a9bf8e4a14231ae7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3233,7 +3226,7 @@ MonoBehaviour:
   forTheAcquiredPanel: {fileID: 1252362576}
   forTheLevelPassedPanel: {fileID: 1599914575}
   scene: Map
-  levelNumber: 2
+  levelNumber: 3
   nextTextBoxButton: {fileID: 1901224998}
 --- !u!114 &1901224998
 MonoBehaviour:

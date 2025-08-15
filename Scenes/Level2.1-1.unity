@@ -3239,7 +3239,7 @@ MonoBehaviour:
   forTheAcquiredPanel: {fileID: 1252362576}
   forTheLevelPassedPanel: {fileID: 1599914575}
   scene: Map
-  levelNumber: 1
+  levelNumber: 2
   nextTextBoxButton: {fileID: 1901224998}
 --- !u!114 &1901224998
 MonoBehaviour:

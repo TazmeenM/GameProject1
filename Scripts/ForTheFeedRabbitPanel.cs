@@ -13,7 +13,7 @@ public class ForTheFeedRabbitPanel : MonoBehaviour
         feedRabbitPanel.gameObject.SetActive(false);
         feedRabbitPanel.okButton.onClick.AddListener(OKButtonClicked);
     }
-    
+
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -44,7 +44,7 @@ public class ForTheFeedRabbitPanel : MonoBehaviour
         {
             forTheInsufficientBerriesPanel.OpenInsufficientBerriesPanel();
         }
-        
+
 
 
     }
@@ -56,5 +56,10 @@ public class ForTheFeedRabbitPanel : MonoBehaviour
         Debug.Log("Rabbit was fed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         nextTextBoxButton.EnableButton();
         SceneManager.LoadSceneAsync("Level1.1");
+    }
+
+    public static void Reset()
+    {
+        rabbitFed = false;
     }
 }

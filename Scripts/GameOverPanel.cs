@@ -34,6 +34,7 @@ public class GameOverPanel : MonoBehaviour
     {
         LevelCounter.Reset();
         BerryCounter.Reset();
+        ForTheFeedRabbitPanel.Reset();
         SceneManager.LoadSceneAsync("MainMenu");
 
     }
