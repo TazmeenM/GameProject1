@@ -2155,7 +2155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478dee561e6f8eb43b52ecc684e3aa2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  berriesAcquiredPanel: {fileID: 0}
+  berriesAcquiredPanel: {fileID: 1183777089}
   nextTextBoxButton: {fileID: 1901224997}
 --- !u!4 &1252362577
 Transform:
