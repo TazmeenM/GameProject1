@@ -1204,16 +1204,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 431962827}
   textBoxText:
-  - Rabbit
-  - Oh, you chose the left path! I love this path!
-  - Because you chose a path I really like, I'll give you some berries!
-  - Berries Acquired!
+  - RabbitSad
+  - What do you mean? Do you think I could ever do something like that? I thought
+    we were friends!
   - Girl
-  - Aren't these just the berries I just gave you...?
+  - We just met...and if you're not poisoning the berries, why do you keep asking
+    for them and then giving them back?
   - Rabbit
-  - Oh, um...Hey, what's up there? I'll go check it out!
+  - Isn't it obvious? I was trying to start a conversation with you!
+  - RabbitSad
+  - Ever since I was young, no one ever wanted to have a real conversation with me.
+  - I thought you were different, but even when I ask you for berries to start a
+    conversation, even when I give you berries out of the kindness of my heart, you
+    still act cold!
   - Girl
-  - Hey, wait for me!
+  - Oh, um, I didn't realize. How can I make it up to you?
+  - RabbitNormal
+  - Crying makes me hungry. 10 berries should make up for it!
+  - Girl
+  - ...Fine
+  - GiveRabbitBerries
+  - Rabbit
+  - Thank you! I feel much better now! Let's keep going!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}
@@ -2574,7 +2586,7 @@ SpriteRenderer:
   m_SortingLayerID: -340461541
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
+  m_Sprite: {fileID: 9197848482490137289, guid: 236daffdc6dcdbd4a9bf8e4a14231ae7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

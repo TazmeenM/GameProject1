@@ -1204,16 +1204,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 431962827}
   textBoxText:
-  - Rabbit
-  - Oh, you chose the left path! I love this path!
-  - Because you chose a path I really like, I'll give you some berries!
-  - Berries Acquired!
+  - RabbitNormal
+  - Oh. I guess I'm not good at noticing when something is a joke.
+  - RabbitEvil
+  - So she's as naive as I thought she was! Amazing!
   - Girl
-  - Aren't these just the berries I just gave you...?
-  - Rabbit
-  - Oh, um...Hey, what's up there? I'll go check it out!
-  - Girl
-  - Hey, wait for me!
+  - Huh?
+  - RabbitNormal
+  - Oh, nothing. I'm just so relieved to hear it was a joke!
+  - Let's keep going.
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}
@@ -2574,7 +2573,7 @@ SpriteRenderer:
   m_SortingLayerID: -340461541
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
+  m_Sprite: {fileID: 9197848482490137289, guid: 236daffdc6dcdbd4a9bf8e4a14231ae7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

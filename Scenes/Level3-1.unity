@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
   option1Text: {fileID: 34627869}
   option2Text: {fileID: 1913965151}
   nextLevelNumber: 0
-  scene: Level2.1
+  scene: Level3-1.1
 --- !u!1 &33904652
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes
+  m_text: Say it was a joke
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1205,23 +1205,18 @@ MonoBehaviour:
   textBox: {fileID: 431962827}
   textBoxText:
   - Girl
-  - Where are we going?
-  - Rabbit
-  - You'll see, soon enough.
-  - Five minutes later...
-  - SceneDarkForest
+  - Hey, how come you keep asking me for berries and then giving them to me randomly?
+  - We haven't even passed by any berry bushes, so you couldn't have picked them
+    while we were walking.
+  - Have you been poisoning the berries or something?
   - RabbitEvil
-  - It's almost time for me to put my plan into action...
-  - SceneForest
+  - How has she discovered my plan already??
   - Girl
   - Huh?
-  - RabbitNormal
-  - Nothing, nothing. Let's keep walking.
-  - SceneDarkForest
+  - RabbitSad
+  - Nothing...I'm just so sad you'd think I would do something like that!
   - Girl
-  - Are we going into the deeper part of the forest?
-  - Rabbit
-  - This is where the wolf lives. Would you like to continue?
+  - Huh?
   - Decision
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
@@ -1612,8 +1607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -0.000014782, y: -16}
+  m_SizeDelta: {x: 315.8866, y: 64.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107317000
 MonoBehaviour:
@@ -1745,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -79.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -0.000014782, y: -103}
+  m_SizeDelta: {x: 315.8866, y: 64.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1238988982
 MonoBehaviour:
@@ -2263,7 +2258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Would you like to continue going with the Tabbit?
+  m_text: What should you do?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2583,7 +2578,7 @@ SpriteRenderer:
   m_SortingLayerID: -340461541
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1343518637512107228, guid: 1a10054a0fa997c46ae915e6eadca762, type: 3}
+  m_Sprite: {fileID: 9197848482490137289, guid: 236daffdc6dcdbd4a9bf8e4a14231ae7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3386,7 +3381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No
+  m_text: Restate your suspicion and demand an explanation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -1204,18 +1204,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 431962827}
   textBoxText:
-  - SceneDarkForest
-  - Rabbit
-  - Yippee, Let's keep going!
-  - RabbitEvil
-  - And walk further into my trap...
-  - Girl
-  - Huh?
   - RabbitNormal
-  - Oh, nothing. Here, have some more berries for the road.
-  - Berries Acquired!
+  - Oh, you chose the path on the right? Let's go then!
+  - This path makes me very hungry though, for some reason...do you have any more
+    berries?
   - Girl
-  - Thank you!
+  - Didn't I just give you berries?
+  - Rabbit
+  - But I want more! I think 10 should be enough.
+  - Girl
+  - Fine
+  - GiveRabbitBerries
+  - Rabbit
+  - ...
+  - Yay thank you! Let's keep going! I think I see our destination ahead!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
   background: {fileID: 1689966989}
