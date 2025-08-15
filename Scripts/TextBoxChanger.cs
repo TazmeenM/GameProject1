@@ -65,6 +65,7 @@ public class TextBoxChanger : MonoBehaviour
         {
             BerryCounter.RemoveBerries(5);
             Debug.Log("Berries Given---------------------------------------------------------------------------------------");
+            NextTextBox();
         }
         else if (textInBox.text.Equals("Decision"))
         {
