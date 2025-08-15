@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class TextBoxChanger : MonoBehaviour
 {
@@ -63,7 +64,7 @@ public class TextBoxChanger : MonoBehaviour
         }
         else if (textInBox.text.Equals("GiveRabbitBerries"))
         {
-            BerryCounter.RemoveBerries(5);
+            GiveRabbitBerries(10);
             Debug.Log("Berries Given---------------------------------------------------------------------------------------");
             NextTextBox();
         }
@@ -80,7 +81,7 @@ public class TextBoxChanger : MonoBehaviour
         {
             CharacterTalkingImage();
         }
-        
+
     }
 
     public bool IsLastTextBox()
@@ -166,6 +167,20 @@ public class TextBoxChanger : MonoBehaviour
             Debug.Log(textInBox.text);
         }
         NextTextBox();
+    }
+
+    public void GiveRabbitBerries(int numberOfBerriesGiven)
+    {
+        if (BerryCounter.numberOfBerries - numberOfBerriesGiven >= 0)
+        {
+            BerryCounter.RemoveBerries(numberOfBerriesGiven);
+            Debug.Log("Berries Removed");
+        }
+        else
+        {
+            Debug.Log("Game Over");
+            SceneManager.LoadSceneAsync("GameOver");
+        }
     }
     
 

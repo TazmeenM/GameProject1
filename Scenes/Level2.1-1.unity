@@ -218,6 +218,7 @@ MonoBehaviour:
   option1Text: {fileID: 34627869}
   option2Text: {fileID: 1913965151}
   nextLevelNumber: 3
+  scene: 
 --- !u!1 &33904652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,7 +1218,7 @@ MonoBehaviour:
   - Huh?
   - RabbitNormal
   - Nothing, nothing. By the way, could you give me some more of those berries? Crying
-    made me hungry.
+    made me hungry. 10 berries should be enough.
   - Girl
   - What about the berries you just gave me? Don't you have more?
   - Rabbit
@@ -1226,6 +1227,7 @@ MonoBehaviour:
   - Fine.
   - GiveRabbitBerries
   - Rabbit
+  - 
   - Okay, let's go!
   textInBox: {fileID: 431962829}
   forTheAcquiredPanel: {fileID: 1252362576}
