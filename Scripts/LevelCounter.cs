@@ -16,7 +16,10 @@ public class LevelCounter : MonoBehaviour
 
     void Awake()
     {
-        numberOfLevels = levelButtons.Length;
+        if (levelButtons.Length > numberOfLevels)
+        {
+            numberOfLevels = levelButtons.Length;
+        }
         decisionsMade = new int[numberOfLevels];
         for (int i = 0; i < decisionsMade.Length; i++)
         {
@@ -50,6 +53,7 @@ public class LevelCounter : MonoBehaviour
 
     public static void PathDecision(int levelNumber, int decisionNumber)
     {
+        Debug.Log(numberOfLevels);
         decisionsMade[levelNumber] = decisionNumber;
     }
 }
