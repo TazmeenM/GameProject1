@@ -12,4 +12,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("HowToPlay");
     }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
 }
